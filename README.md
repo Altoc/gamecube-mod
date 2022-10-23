@@ -24,3 +24,15 @@ Next I should...
 <li>Alter the `\devkitPro\examples\gamecube\graphics\gx\acube\source\acube.c` file. I changed the cube vertex data on lines 24-31 to `10` instead of `30` (smaller cube)</li>
 <li>repeat from step 2 to see your new `acube.dol` file. The old `acube.dol` will most likely still be present, so don't fool yourself into launching the old one in Dolphin and not see your new, smaller cube.</li>
 </ol>
+
+## Using Jamchambs [ac-mod-template](https://github.com/jamchamb/ac-mod-template) to create an Animal Crossing code patch
+<ul>
+<li>Import the project to visual studio code</li>
+<li>make command doesnt work for me.. complains about not having ac-nesrom-save-generator</li>
+<li>I believe I need [jamchamb's ac-nesrom-save-generator](https://github.com/jamchamb/ac-nesrom-save-generator) to proceed</li>
+<li>does this actually patch AC with custom code, or is it just to put custom NES games into AC??</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
