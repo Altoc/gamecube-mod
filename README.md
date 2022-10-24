@@ -25,6 +25,23 @@ Next I should...
 <li>repeat from step 2 to see your new `acube.dol` file. The old `acube.dol` will most likely still be present, so don't fool yourself into launching the old one in Dolphin and not see your new, smaller cube.</li>
 </ol>
 
+## Animal Crossing GCN Findings
+<ul>
+<li>`message_data.bin` seems to hold (possibly) all the dialogue messages in the game.</li>
+<li>`select_data.bin` seems to hold all the player's dialogue responses.</li>
+<li>KK Slider's first line of dialogue on a new game appear to be saved in memory at search address `81298360`. I found this by converting part of his message to hex, then searching the Memory of the game when his dialogue was showing. I restarted the game, and the message was saved to the same place.</li>
+<li>`81298360` is a memory address that seems to get dialogue data dumped to it when the data is loaded in. Placing a breakpoint here when talking to KK fires off after the player's first dialogue reponse (probably a decent time to load the next set of KK dialogue lines)7</li>
+<li>Breakpoint on `803c0a3c` (instruction there should be `li r0, 1`) always gets hit when an animal is about to start talking with (presumably) newly loaded dialogue.</li>
+<li>Replacing the function spanning from 803c0a20 -> 803c0a38 makes w/e animal you're talking to emit a one line (null?) value, and loops over and over. So it must be responsible for loading the new data</li>
+<li>Dolphin Emu can display the Memory in Ascii... Easier than translating... lol</li>
+<li>Some kind of value must be used for line wrapping. Example of me altering the memory locations of the dialogue KK would say next: [IMAGE HERE]</li>
+<li> </li>
+<li> </li>
+<li> </li>
+<li> </li>
+<li> </li>
+</ul>
+
 ## Using Jamchambs [ac-mod-template](https://github.com/jamchamb/ac-mod-template) to create an Animal Crossing code patch
 <ul>
 <li>Import the project to visual studio code</li>
