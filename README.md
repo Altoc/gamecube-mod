@@ -10,6 +10,7 @@ Next I should...
 
 ## Resources
 - [jamchamb](https://github.com/jamchamb?tab=repositories&q=ac&type=&language=&sort=) has a ton of good stuff for modding ACPL
+- [Cuyler36](https://github.com/Cuyler36?tab=repositories) is another fantasic resource.
 - [devkit pro](https://github.com/devkitPro/gamecube-examples) has real examples of creating .dol files (run in dolphin emu) from c or c++ using makefile
 - Visual Studio Code for altering C & C++ files.
 
