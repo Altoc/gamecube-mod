@@ -34,7 +34,8 @@ Next I should...
 <li>Breakpoint on `803c0a3c` (instruction there should be `li r0, 1`) always gets hit when an animal is about to start talking with (presumably) newly loaded dialogue.</li>
 <li>Replacing the function spanning from 803c0a20 -> 803c0a38 makes w/e animal you're talking to emit a one line (null?) value, and loops over and over. So it must be responsible for loading the new data</li>
 <li>Dolphin Emu can display the Memory in Ascii... Easier than translating... lol</li>
-<li>Some kind of value must be used for line wrapping. Example of me altering the memory locations of the dialogue KK would say next: ![Screenshot](https://user-images.githubusercontent.com/37989193/197431469-f18b864d-c56d-4353-b700-6073902d0675.png)
+<li>Some kind of value must be used for line wrapping. Example of me altering the memory locations of the dialogue KK would say next: ![AC_Mod_01](https://user-images.githubusercontent.com/37989193/197431730-fbed4136-52e9-4351-92dc-7171c5f8e643.PNG)
+
 </li>
 <li> </li>
 <li> </li>
